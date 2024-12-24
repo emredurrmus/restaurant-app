@@ -1,0 +1,94 @@
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff9f5;
+  min-height: 100vh;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #d63031, #e17055);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.2);
+}
+
+.menu-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", cursive;
+}
+
+.menu-header p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    padding: 10px;
+  }
+
+  .menu-header {
+    margin: -10px -10px 20px -10px;
+    border-radius: 0;
+    padding: 30px 15px;
+  }
+
+  .menu-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.menu-sections {
+  padding-top: 20px;
+}
+
+.category-section {
+  scroll-margin-top: 150px;
+}
+
+.category-title {
+  color: #d63031;
+  font-size: 1.8rem;
+  margin: 30px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffe4e1;
+}
+
+@media (max-width: 768px) {
+  .category-section {
+    scroll-margin-top: 120px;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+    margin: 20px 0 15px;
+  }
+}
